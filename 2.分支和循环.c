@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+//条件判断
 int main()
 {
 	int m = 1;
@@ -15,3 +16,35 @@ int main()
 		printf("失败");
 	return 0;
 }
+
+//奇数
+int main()
+{
+	int x;
+	for (x=1;x<=100;x++)
+	{
+		if (x % 2 == 1)
+			printf("%d 是奇数\n", x);
+	}
+	return 0;
+}
+
+//switch循环语句
+int main()
+{
+	int day = 0;
+	scanf("%d",&day);
+	switch (day)
+	{
+	case 1:printf("星期一\n"); return;
+	case 2:printf("星期二\n"); return;
+	case 3:printf("星期三\n"); return;
+	case 4:printf("星期四\n"); return;
+	case 5:printf("星期五\n"); return;
+	case 6:printf("星期六\n"); return;
+	case 7:printf("星期日\n"); return;
+	}
+	return 0;
+}
+
+
