@@ -61,3 +61,26 @@ int main()
 	printf("\n总共有：%d", count);
 	return 0;
 }
+
+//④素数
+int main()
+{
+	int i, j,count=0;
+	for (i=101;i<=200;i+=2)//除了偶数
+	{
+		for (j = 2; j < sqrt(i); j++)
+		{
+			if (i % j == 0)
+			{
+				break;
+			}
+		}
+		if (j > sqrt(i))
+		{
+			count++;
+			printf("%d  ",i);
+		}
+	}
+	printf("\n%d\n", count);
+	return 0;
+}
