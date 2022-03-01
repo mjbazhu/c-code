@@ -106,3 +106,27 @@ int main()
 	
 	return 0;
 }
+
+//⑤输密码
+int main()
+{
+	int x[20] = {0};
+	int i = 0;
+	
+	while (i < 3)
+	{
+		printf("请输入密码");
+		scanf("%s", &x);
+		if (strcmp(x,"123456")==0)//库函数，判断字符串是否相等
+		{
+			printf("登陆成功\n");
+			break;
+		}
+		else
+			printf("登陆失败\n");
+		i++;
+	}
+	if (i == 3)
+		printf("错误三次，密码锁住");
+	return 0;
+}
